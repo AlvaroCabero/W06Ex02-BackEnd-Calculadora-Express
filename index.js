@@ -19,6 +19,7 @@ const initializeServer = (port) => {
     }
   });
 };
+app.use(morgan("dev"));
 
 app.use("/suma", sumaRoutes);
 app.use("/resta", restaRoutes);
